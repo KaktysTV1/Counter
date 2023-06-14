@@ -56,6 +56,14 @@
                                     <action selector="buttonRemoveValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QG4-eO-nkT"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="История изменений:" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RP-of-qA8">
+                                <rect key="frame" x="25" y="106" width="324" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,6 +72,7 @@
                         <outlet property="buttonMinus" destination="tz3-2O-bYm" id="jSx-Gp-JXn"/>
                         <outlet property="buttonPlus" destination="PAc-Uy-rC0" id="6lv-07-Kiq"/>
                         <outlet property="counter" destination="SFg-9A-WCw" id="ZvB-uG-uQd"/>
+                        <outlet property="historyLable" destination="0RP-of-qA8" id="cXB-7Z-Q8q"/>
                         <outlet property="removeValue" destination="XYK-4x-DIt" id="JOB-Fg-nqL"/>
                     </connections>
                 </viewController>
@@ -74,6 +83,9 @@
     </scenes>
     <resources>
         <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
